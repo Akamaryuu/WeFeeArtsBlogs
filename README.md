@@ -1,4 +1,4 @@
-# WeFeeArts — 赤魔龍の実験場 (Jekyll / GitHub Pages)
+# WeFeeArts — 赤魔龍の工房 (Jekyll / GitHub Pages)
 
 個人サイトのソース一式。GitHub Pages のユーザーサイトとして公開する想定。
 

@@ -1,12 +1,16 @@
-/* WeFeeArts — オリジナルテーマ (依存ライブラリなし) */
+/* 赤魔龍の工房 — 工房テーマ (依存ライブラリなし)
+   木の作業台・革・真鍮・生成りの紙をイメージした暖色パレット */
 :root {
-  --bg: #faf8f5;
-  --surface: #ffffff;
-  --text: #26221f;
-  --muted: #7a7268;
-  --accent: #b03a2e;      /* 赤魔龍の赤 */
-  --accent-soft: #f6e3e0;
-  --line: #e5ded4;
+  --bg: #f5eedd;          /* 生成りの紙 */
+  --surface: #fffaf0;     /* 暖かい白 */
+  --text: #2f2620;        /* 墨茶 */
+  --muted: #85755f;
+  --accent: #a63d14;      /* 錆赤 — 赤魔龍の赤を土寄りに */
+  --accent-soft: #f3e2cf; /* 砂色 */
+  --line: #e0d0b0;
+  --stitch: #c19a5b;      /* 真鍮・ステッチ色 */
+  --wood: #40301e;        /* 濃い木材 */
+  --wood-text: #f6ead2;
   --max: 760px;
 }
 * { box-sizing: border-box; }
@@ -22,52 +26,52 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ヘッダー */
-.site-header { background: var(--surface); border-bottom: 1px solid var(--line); }
-.header-inner { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.2rem; padding-top: 0.9rem; padding-bottom: 0.9rem; }
-.site-title { color: var(--text); display: flex; align-items: baseline; gap: 0.6rem; }
+/* ヘッダー — 木の看板 */
+.site-header { background: var(--wood); border-bottom: 4px solid var(--accent); }
+.header-inner { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1.2rem; padding-top: 1rem; padding-bottom: 1rem; }
+.site-title { color: var(--wood-text); display: flex; align-items: baseline; gap: 0.6rem; }
 .site-title:hover { text-decoration: none; }
-.site-name { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.02em; }
-.site-subtitle { font-size: 0.85rem; color: var(--muted); }
+.site-name { font-size: 1.5rem; font-weight: 700; letter-spacing: 0.06em; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
+.site-subtitle { font-size: 0.85rem; color: var(--stitch); letter-spacing: 0.14em; }
 .site-nav { margin-left: auto; display: flex; gap: 1rem; font-size: 0.92rem; }
-.site-nav a { color: var(--text); }
+.site-nav a { color: var(--wood-text); }
 
-/* 一覧 */
+/* 一覧 — 作業台の上のカード */
 .content { padding-top: 1.6rem; padding-bottom: 2.4rem; }
 .post-list { list-style: none; margin: 1.2rem 0 0; padding: 0; }
-.post-item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.9rem; }
+.post-item { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 0.9rem; box-shadow: 0 2px 0 rgba(64, 48, 30, 0.12); }
 .post-meta { margin: 0 0 0.2rem; font-size: 0.82rem; color: var(--muted); display: flex; gap: 0.7rem; align-items: center; }
-.series-badge { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 0.78rem; }
+.series-badge { background: var(--accent-soft); color: var(--accent); border: 1px dashed var(--stitch); border-radius: 999px; padding: 0.05rem 0.6rem; font-size: 0.78rem; }
 .post-title { margin: 0.1rem 0 0.3rem; font-size: 1.2rem; line-height: 1.5; }
 .post-title a { color: var(--text); }
 .post-excerpt { margin: 0; color: var(--muted); font-size: 0.94rem; }
 
 /* 記事 */
-.post-header h1 { font-size: 1.7rem; line-height: 1.45; margin: 0.3rem 0 0.4rem; }
+.post-header h1 { font-size: 1.7rem; line-height: 1.45; margin: 0.3rem 0 0.4rem; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
 .post-lead { color: var(--muted); margin: 0 0 1rem; }
-.post-body h2 { font-size: 1.3rem; border-left: 4px solid var(--accent); padding-left: 0.6rem; margin: 2rem 0 0.6rem; line-height: 1.5; }
+.post-body h2 { font-size: 1.3rem; border-left: 4px solid var(--accent); padding-left: 0.6rem; margin: 2rem 0 0.6rem; line-height: 1.5; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
 .post-body h3 { font-size: 1.1rem; margin: 1.6rem 0 0.4rem; }
-.post-body img { max-width: 100%; border-radius: 8px; }
-.post-body pre { background: #2b2622; color: #f2ede6; padding: 0.9rem 1rem; border-radius: 8px; overflow-x: auto; font-size: 0.88rem; line-height: 1.6; }
+.post-body img { max-width: 100%; border-radius: 6px; border: 1px solid var(--line); }
+.post-body pre { background: #2b2119; color: #f2ede6; padding: 0.9rem 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.88rem; line-height: 1.6; }
 .post-body code { font-family: "SFMono-Regular", Consolas, "Courier New", monospace; }
 .post-body p code, .post-body li code { background: var(--accent-soft); padding: 0.05rem 0.35rem; border-radius: 4px; font-size: 0.9em; }
-.post-body blockquote { margin: 1rem 0; padding: 0.2rem 1rem; border-left: 3px solid var(--line); color: var(--muted); }
+.post-body blockquote { margin: 1rem 0; padding: 0.2rem 1rem; border-left: 3px solid var(--stitch); color: var(--muted); }
 .post-body table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.94rem; }
 .post-body th, .post-body td { border: 1px solid var(--line); padding: 0.4rem 0.7rem; text-align: left; }
 .post-body th { background: var(--accent-soft); }
-.post-footer { margin-top: 2.4rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+.post-footer { margin-top: 2.4rem; border-top: 2px dashed var(--stitch); padding-top: 1rem; }
 .post-nav { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.8rem; }
 .post-nav .next { margin-left: auto; text-align: right; }
 
 /* 連載ページ */
-.series-block { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem; }
-.series-block h2 { margin: 0.2rem 0 0.3rem; font-size: 1.25rem; }
+.series-block { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 1rem; box-shadow: 0 2px 0 rgba(64, 48, 30, 0.12); }
+.series-block h2 { margin: 0.2rem 0 0.3rem; font-size: 1.25rem; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
 .series-block p { margin: 0 0 0.6rem; color: var(--muted); font-size: 0.94rem; }
 .series-block ul { margin: 0; padding-left: 1.2rem; }
 
 /* フッター */
-.site-footer { border-top: 1px solid var(--line); background: var(--surface); padding: 1.4rem 0 1.8rem; font-size: 0.9rem; }
-.footer-name { margin: 0 0 0.4rem; font-weight: 700; }
+.site-footer { border-top: 2px dashed var(--stitch); background: var(--surface); padding: 1.4rem 0 1.8rem; font-size: 0.9rem; }
+.footer-name { margin: 0 0 0.4rem; font-weight: 700; font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif; }
 .footer-links { list-style: none; display: flex; gap: 1rem; margin: 0 0 0.6rem; padding: 0; flex-wrap: wrap; }
 .footer-note { margin: 0; color: var(--muted); font-size: 0.82rem; }
 

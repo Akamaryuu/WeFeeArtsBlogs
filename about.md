@@ -15,7 +15,7 @@ WeFeeArts は、約20年前に立ち上げたMMORPGギルドの名前であり�
 
 ## 活動の置き場
 
-- **このサイト（実験場）** — 技術・ゲーム・雑記の記録
+- **このサイト（工房）** — 技術・ゲーム・雑記の記録
 - **note** — まとまった記事はこちらにも（[note.com/wefeearts](https://note.com/wefeearts)）
 - **仕事・実績** — <!-- 仕事用PagesのURLをここに入れる -->
 - **X** — [@wefeearts](https://x.com/wefeearts)

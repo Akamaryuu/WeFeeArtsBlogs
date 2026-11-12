@@ -1,9 +1,9 @@
-# WeFeeArts / 赤魔龍 — 個人サイト（実験場）
+# WeFeeArts / 赤魔龍 — 個人サイト（工房）
 # GitHub Pages (Jekyll) 用設定
 
-title: "WeFeeArts"
-subtitle: "赤魔龍の実験場"
-description: "木内 和也（赤魔龍）｜WeFeeArts の個人サイト。技術とゲームと雑記の記録。"
+title: "赤魔龍の工房"
+subtitle: "WeFeeArts"
+description: "赤魔龍の工房 — 木内 和也（赤魔龍）｜WeFeeArts の個人サイト。技術とゲームと、つくることの記録。"
 author:
   name: "木内 和也（赤魔龍）"
 lang: "ja"
