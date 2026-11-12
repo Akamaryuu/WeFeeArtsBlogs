@@ -2,6 +2,7 @@
   <div class="wrap">
     <p class="footer-name">{{ site.author.name }} ｜ {{ site.title }}</p>
     <ul class="footer-links">
+      {% if site.links.hub %}<li><a href="{{ site.links.hub }}">WeFeeArts ポータル</a></li>{% endif %}
       {% if site.links.note %}<li><a href="{{ site.links.note }}" target="_blank" rel="noopener">note</a></li>{% endif %}
       {% if site.links.x %}<li><a href="{{ site.links.x }}" target="_blank" rel="noopener">X</a></li>{% endif %}
       {% if site.links.youtube %}<li><a href="{{ site.links.youtube }}" target="_blank" rel="noopener">YouTube</a></li>{% endif %}

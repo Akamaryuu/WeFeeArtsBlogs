@@ -8,6 +8,7 @@
       <a href="{{ '/' | relative_url }}">記事</a>
       <a href="{{ '/series/' | relative_url }}">連載</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
+      {% if site.links.hub %}<a href="{{ site.links.hub }}">ポータル</a>{% endif %}
       {% if site.links.note %}<a href="{{ site.links.note }}" target="_blank" rel="noopener">note</a>{% endif %}
       {% if site.links.work and site.links.work != "" %}<a href="{{ site.links.work }}" target="_blank" rel="noopener">仕事・実績</a>{% endif %}
     </nav>

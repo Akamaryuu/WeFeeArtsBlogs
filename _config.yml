@@ -43,6 +43,7 @@ series:
 
 # 看板リンク（外向きの導線）
 links:
+  hub: "https://akamaryuu.github.io/WeFeeArtsHub/"
   note: "https://note.com/wefeearts"
   x: "https://x.com/wefeearts"
   youtube: "https://www.youtube.com/@WeFeeArts"
