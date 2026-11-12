@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% assign slug = page.categories | first %}
+      {% for s in site.series %}
+        {% if s.slug == slug %}<a class="series-badge" href="{{ '/series/' | relative_url }}#{{ s.slug }}">{{ s.name }}</a>{% endif %}
+      {% endfor %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="post-lead">{{ page.description }}</p>{% endif %}
+  </header>
+  <div class="post-body">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    <nav class="post-nav">
+      {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>{% endif %}
+    </nav>
+    <p><a href="{{ '/' | relative_url }}">記事一覧へ戻る</a></p>
+  </footer>
+</article>
