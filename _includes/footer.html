@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-name">{{ site.author.name }} ｜ {{ site.title }}</p>
+    <ul class="footer-links">
+      {% if site.links.note %}<li><a href="{{ site.links.note }}" target="_blank" rel="noopener">note</a></li>{% endif %}
+      {% if site.links.x %}<li><a href="{{ site.links.x }}" target="_blank" rel="noopener">X</a></li>{% endif %}
+      {% if site.links.youtube %}<li><a href="{{ site.links.youtube }}" target="_blank" rel="noopener">YouTube</a></li>{% endif %}
+      {% if site.links.work and site.links.work != "" %}<li><a href="{{ site.links.work }}" target="_blank" rel="noopener">仕事・実績</a></li>{% endif %}
+    </ul>
+    <p class="footer-note">このサイトは実験場です。記事は Markdown で書き、GitHub Pages (Jekyll) で公開しています。</p>
+  </div>
+</footer>

@@ -1,0 +1,56 @@
+# WeFeeArts / 赤魔龍 — 個人サイト（実験場）
+# GitHub Pages (Jekyll) 用設定
+
+title: "WeFeeArts"
+subtitle: "赤魔龍の実験場"
+description: "木内 和也（赤魔龍）｜WeFeeArts の個人サイト。技術とゲームと雑記の記録。"
+author:
+  name: "木内 和也（赤魔龍）"
+lang: "ja"
+timezone: "Asia/Tokyo"
+
+# プロジェクトサイト (akamaryuu.github.io/blog) なので baseurl は /blog
+# 2026-11-12: 2リポジトリ分割に合わせて変更（ハブ=ユーザサイト、ブログ=プロジェクトサイト）
+baseurl: "/WeFeeArtsBlogs"
+url: "https://akamaryuu.github.io"
+
+# Markdown 処理
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 記事URL: /<連載>/<タイトル>/
+permalink: /:categories/:title/
+
+# GitHub Pages のセーフモードで使えるプラグインのみ
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# 連載（シリーズ）の定義: categories の第1要素と対応させる
+series:
+  - slug: "tech"
+    name: "講師の現場から"
+    description: "SE・IT講師の現場で得た技術と教育の話。"
+  - slug: "guild"
+    name: "ギルド日誌"
+    description: "ゲームのプレイ日記と、自作・MODなどの創作記録。"
+  - slug: "notes"
+    name: "赤魔龍の雑記"
+    description: "その他の雑記。近況報告もここ。"
+
+# 看板リンク（外向きの導線）
+links:
+  note: "https://note.com/wefeearts"
+  x: "https://x.com/wefeearts"
+  youtube: "https://www.youtube.com/@WeFeeArts"
+  # work: 仕事用PagesのURLが決まったらここに入れる
+  work: ""
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-item">
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        {% assign slug = post.categories | first %}
+        {% for s in site.series %}
+          {% if s.slug == slug %}<a class="series-badge" href="{{ '/series/' | relative_url }}#{{ s.slug }}">{{ s.name }}</a>{% endif %}
+        {% endfor %}
+      </p>
+      <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.description %}<p class="post-excerpt">{{ post.description }}</p>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% if site.posts.size == 0 %}
+  <p>まだ記事がありません。</p>
+  {% endif %}
+</div>
