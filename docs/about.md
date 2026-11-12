@@ -60,4 +60,5 @@ WeFeeArts（うぃふぃあーつ）は、約20年前の2006年頃に私が結�
 - note: [木内 和也（赤魔龍）｜WeFeeArts](https://note.com/wefeearts)
 - X: [@wefeearts](https://x.com/wefeearts)
 - YouTube: WeFeeArts Channel
+- 自己紹介スライド（PDF）: [講師向け自己紹介スライド](https://akamaryuu.github.io/WeFeeArtsHub/self-intro.pdf)
 - 仕事・実績: <!-- 仕事用PagesのURLをここに入れる -->
