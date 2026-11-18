@@ -3,6 +3,7 @@ layout: post
 title: "暗い洞窟の主、ゲートの先の世界。金策の果てに買った剣"
 date: 2026-11-16 05:30:00 +0900
 categories: [guild]
+image: /assets/images/starbound-base-03/03-mama-poptop.jpg
 description: "『Starbound冒険日記』第3回。金策のために暗い洞窟へ。地下神殿の主Mama Poptop、ゲートの先のScience Outpost、そして稼いだピクセルで手に入れた新しい剣の記録。"
 ---
 
