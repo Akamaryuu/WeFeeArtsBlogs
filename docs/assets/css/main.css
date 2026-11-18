@@ -1,6 +1,7 @@
 /* 赤魔龍の工房 — 工房テーマ (依存ライブラリなし)
    木の作業台・革・真鍮・生成りの紙をイメージした暖色パレット */
 :root {
+  color-scheme: light dark;
   --bg: #f5eedd;          /* 生成りの紙 */
   --surface: #fffaf0;     /* 暖かい白 */
   --text: #2f2620;        /* 墨茶 */
@@ -79,3 +80,38 @@ a:hover { text-decoration: underline; }
   .site-nav { margin-left: 0; }
   .post-header h1 { font-size: 1.45rem; }
 }
+
+/* ダークテーマ（端末設定に自動追従） — 夜の工房 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a140f;
+    --surface: #261d15;
+    --text: #ece1cd;
+    --muted: #a08b6d;
+    --accent: #cf6b3a;
+    --accent-soft: #3a2a1c;
+    --line: #453723;
+    --stitch: #c19a5b;
+    --wood: #241809;
+    --wood-text: #f6ead2;
+  }
+  .post-item, .series-block { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45); }
+  .post-body pre { background: #120d08; }
+}
+
+/* テーマ切り替えボタン＋手動指定（端末設定より優先） */
+.theme-toggle { position: fixed; right: 14px; bottom: 14px; z-index: 50; width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--text); font-size: 1.15rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22); }
+:root[data-theme="dark"] {
+  --bg: #1a140f; --surface: #261d15; --text: #ece1cd; --muted: #a08b6d;
+  --accent: #cf6b3a; --accent-soft: #3a2a1c; --line: #453723;
+  --stitch: #c19a5b; --wood: #241809; --wood-text: #f6ead2;
+}
+:root[data-theme="dark"] .post-item, :root[data-theme="dark"] .series-block { box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45); }
+:root[data-theme="dark"] .post-body pre { background: #120d08; }
+:root[data-theme="light"] {
+  --bg: #f5eedd; --surface: #fffaf0; --text: #2f2620; --muted: #85755f;
+  --accent: #a63d14; --accent-soft: #f3e2cf; --line: #e0d0b0;
+  --stitch: #c19a5b; --wood: #40301e; --wood-text: #f6ead2;
+}
+:root[data-theme="light"] .post-item, :root[data-theme="light"] .series-block { box-shadow: 0 2px 0 rgba(64, 48, 30, 0.12); }
+:root[data-theme="light"] .post-body pre { background: #2b2119; }

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script>try{var t=localStorage.getItem('wf-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
   {% feed_meta %}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GS730LWDG"></script>
@@ -21,5 +22,12 @@ gtag('config', 'G-0GS730LWDG');
     {{ content }}
   </main>
   {% include footer.html %}
+<button type="button" class="theme-toggle" onclick="wfToggleTheme()" aria-label="テーマ切り替え"></button>
+<script>
+function wfThemeNow(){var t=document.documentElement.getAttribute('data-theme');if(t)return t;return window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+function wfThemeBtn(){var b=document.querySelector('.theme-toggle');if(b)b.textContent=wfThemeNow()==='dark'?'\u2600\uFE0F':'\uD83C\uDF19';}
+function wfToggleTheme(){var n=wfThemeNow()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('wf-theme',n);}catch(e){}wfThemeBtn();}
+wfThemeBtn();
+</script>
 </body>
 </html>
