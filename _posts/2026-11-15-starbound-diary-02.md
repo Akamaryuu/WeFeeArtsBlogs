@@ -3,6 +3,7 @@ layout: post
 title: "最初のキャンプ、完成。地下に工房、夜の森に城の夢"
 date: 2026-11-15 14:30:00 +0900
 categories: [guild]
+image: /assets/images/starbound-base-02/01-science-outpost.jpg
 description: "『Starbound冒険日記』第2回。Science Outpostの城の店、地下のキャンプ跡、巨大な花の森の廃屋を巡り、最初のキャンプが完成するまでの冒険。"
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "新たに作成した護衛官、種族はNightarのShadonyx"
 date: 2026-11-14 06:30:00 +0900
 categories: [guild]
+image: /assets/images/starbound-base-01/01-char-creation.jpg
 description: "『Starbound冒険日記』第1回。新たに作成した護衛官は、闇に生きる種族NightarのShadonyx。卒業式の襲撃から脱出し、未知の惑星へ降り立つ。"
 ---
 
