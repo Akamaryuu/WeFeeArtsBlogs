@@ -68,7 +68,11 @@ description: "『Starbound冒険日記』第7回。第6回の予告通り、Carm
 
 ボス戦の様子は、動画にも残した。
 
-[Starbound Trial Seeker(Ursa )Boss](https://youtu.be/Ptg06Z4HGWM)
+<div style="position:relative;padding-top:56.25%;margin:16px 0">
+<iframe src="https://www.youtube.com/embed/Ptg06Z4HGWM" title="Starbound Trial Seeker(Ursa )Boss" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" allowfullscreen></iframe>
+</div>
+
+*動画: シーカーの試験のボス戦『Ursa』*
 
 激闘の末、Ursa は「もう目的の物は手に入れた」と言い残して、撤退していった。報酬に Epic の Faded Mana Crystal は残ったけれど、なにか得体の知れないものを、持っていかれた気がする。
 
